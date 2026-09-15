@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MATH 3260 Linear Algebra interactive homework practice with instant grading.">
+  <title>MATH 3260 Interactive Homework</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260915-renderfix">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+        processEscapes: true
+      },
+      svg: { fontCache: "local" },
+      options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+    };
+  </script>
+  <!-- MathJax is bundled locally so mathematical notation does not depend on a CDN. -->
+  <script src="assets/vendor/mathjax/tex-svg-full.js?v=20260915-renderfix"></script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <button id="homeLogo" class="session-link home-logo" aria-label="Course home">
+      <span class="brand">MATH 3260<small>Interactive Homework · Stage 1</small></span>
+    </button>
+    <div class="sidebar-progress">
+      <div class="progress-track"><div id="sideProgress" class="progress-fill"></div></div>
+      <div id="sideProgressLabel" class="progress-label"></div>
+    </div>
+    <nav id="chapterNav" class="chapter-nav" aria-label="Course sessions"></nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="topbar-title">Linear Algebra Homework Practice</div>
+      <select id="mobileSelect" class="btn mobile-select" aria-label="Jump to session"></select>
+      <div class="top-actions">
+        <button id="helpBtn" class="btn">Help</button>
+        <button id="resetBtn" class="btn">Reset progress</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="mathStatus" class="math-status" role="alert" hidden></div>
+      <div id="globalHelp" class="help-panel">
+        <strong>Answer-entry help</strong>
+        <p>Numbers may be entered as decimals or fractions (for example <code>1/3</code>). Expressions such as <code>pi/4</code> and <code>sqrt(2)</code> are accepted. Complex numbers may be entered as <code>3-2i</code>. For vectors and matrices, enter one component per box.</p>
+        <p><strong>Stage 1 note:</strong> this is a browser-only practice system. It does not send grades to the instructor.</p>
+      </div>
+      <div id="content"></div>
+    </div>
+  </main>
+</div>
+
+<script src="assets/questions.js?v=20260915-renderfix"></script>
+<script src="assets/grader.js?v=20260915-renderfix"></script>
+<script src="assets/app.js?v=20260915-renderfix"></script>
+</body>
+</html>
