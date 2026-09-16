@@ -1,9 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MATH 3260 Stage 2 — Chapter 1 Preview</title><link rel="stylesheet" href="assets/stage2.css">
-<script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:true},svg:{fontCache:"local"}};</script>
-<script src="assets/vendor/mathjax/tex-svg-full.js"></script></head>
-<body><header><div><strong>MATH 3260</strong><span>Stage 2 · Chapter 1 Preview</span></div><nav id="nav"></nav></header>
-<main><section class="hero"><div class="eyebrow">Six-problem homework model</div><h1>Chapter 1: Systems of Linear Equations</h1>
-<p>Each session contains 2 easy, 3 medium, and 1 slightly challenging problem. Full worked solutions appear after checking. Incorrect answers also reveal a similar practice problem.</p></section>
-<div id="content"></div></main><script src="assets/stage2_ch1.js"></script><script src="assets/stage2_app.js"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MATH 3260 Stage 2 Homework</title>
+<link rel="stylesheet" href="assets/stage2.css?v=20260916-full">
+<script>
+window.MathJax={
+  tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:true},
+  svg:{fontCache:"local"}
+};
+</script>
+<script src="assets/vendor/mathjax/tex-svg-full.js"></script>
+</head>
+<body>
+<header>
+  <div class="brand"><strong>MATH 3260</strong><span>Stage 2 · Complete Homework Preview</span></div>
+  <nav id="chapterNav" aria-label="Chapter navigation"></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Complete six-problem homework model</div>
+    <h1>MATH 3260 — Linear Algebra Homework</h1>
+    <p>Each lecture session contains <strong>2 easy, 3 medium, and 1 slightly challenging</strong> problem. Check all six answers together, open detailed worked solutions, and use the similar-practice problem that appears after an incorrect response.</p>
+    <div class="course-stats" id="courseStats"></div>
+    <div class="hero-actions"><button class="btn" id="resetProgress">Reset saved progress</button></div>
+  </section>
+  <section class="chapter-panel">
+    <h2 id="chapterHeading"></h2>
+    <nav id="sessionNav" aria-label="Session navigation"></nav>
+  </section>
+  <div id="content"></div>
+</main>
+<script src="assets/data/chapter01.js?v=20260916-full"></script>
+<script src="assets/data/chapter02.js?v=20260916-full"></script>
+<script src="assets/data/chapter03.js?v=20260916-full"></script>
+<script src="assets/data/chapter04.js?v=20260916-full"></script>
+<script src="assets/data/chapter05.js?v=20260916-full"></script>
+<script src="assets/data/chapter06.js?v=20260916-full"></script>
+<script src="assets/data/chapter07.js?v=20260916-full"></script>
+<script src="assets/data/chapter08.js?v=20260916-full"></script>
+<script src="assets/data/chapter09.js?v=20260916-full"></script>
+<script src="assets/data/chapter10.js?v=20260916-full"></script>
+<script src="assets/stage2_grader.js?v=20260916-full"></script>
+<script src="assets/stage2_app.js?v=20260916-full"></script>
+</body>
+</html>
